@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Smythe&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Restaurant ordering app</title>
+</head>
+
+<body>
+    <header id="header">
+        <div class="head-content">
+            <p class="head-title">Mathi's Diner</p>
+            <p class="head-para">The best burgers and pizzas in town.</p>
+        </div>
+    </header>
+
+    <main>
+        <div id="menu"></div>
+        <div id="success-prompt" class="success-prompt hidden"></div>
+        </div>
+        <div id="order"></div>
+        <div id="payment-outer" class="backdrop hidden">
+            <div id="payment">
+                <p class="pay-head">Enter card details</p>
+                <form action="#" id="payment-form">
+                    <input type="text" placeholder="Enter your name" name="name" required>
+                    <input type="text" placeholder="Enter card number" name="card-number" required>
+                    <input type="text" placeholder="Enter CVV" name="cvv" required>
+
+                    <input type="submit" class="button payment-complete" value="Pay">
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="index.js">
+
+    </script>
+</body>
+
+</html>

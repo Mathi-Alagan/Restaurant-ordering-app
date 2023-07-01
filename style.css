@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 600px;
+  margin: 10px auto;
+  font-family: "Smythe", cursive;
+  box-shadow: 0 0 10px 0 #d2d2d2;
+  border-radius: 10px;
+  /* border: 1px solid red; */
+}
+
+main {
+  position: relative;
+}
+
+/* header */
+header {
+  background-image: url(images/food.png);
+  border: 1px solid rgba(255, 255, 0, 0.449); /*if this line is taken out, the background image will collapse, I don't know why*/
+  border-radius: 10px 10px 0 0;
+}
+
+.head-content {
+  margin: 56px 0 56px 46px;
+  color: white;
+}
+.head-title {
+  font-size: 39px;
+}
+.head-para {
+  font-size: 22.42px;
+}
+
+/* menu */
+main {
+  padding: 20px 46px 47px;
+}
+
+.food {
+  display: flex;
+  padding: 47px 0;
+  border-bottom: 1px solid #d2d2d2;
+}
+
+.food-img {
+  width: 80px;
+}
+.food-details {
+  margin-left: 38px;
+}
+.food-name {
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+.food-ing {
+  font-size: 16px;
+  color: #8b8b8b;
+  margin-bottom: 10px;
+}
+.food-price {
+  font-size: 20px;
+}
+
+.food-add {
+  font-size: 50px;
+  color: #d5d5d5;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+/* Order prompt */
+#order {
+  padding-top: 47px;
+}
+
+.order-head,
+.order-food {
+  font-size: 28px;
+}
+.order-head {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.order-items {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.order-remove {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  color: #bbbbbb;
+  margin-top: 12px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.order-price {
+  font-size: 20px;
+  margin-left: auto;
+}
+
+.order-items-last {
+  padding-bottom: 10px;
+}
+
+.order-total {
+  display: flex;
+  border-top: 1px solid black;
+  padding: 20px 0 60px;
+}
+.order-total-head {
+  font-size: 28px;
+}
+.order-total-price {
+  margin-left: auto;
+  font-size: 20px;
+}
+.order-complete {
+  font-size: 16px;
+}
+
+.button {
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #16db99;
+  padding: 24px 0;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Payment prompt */
+#payment {
+  font-family: "Roboto", sans-serif;
+  width: 524px;
+  padding: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -250px;
+  margin-left: -260px;
+  background-color: white;
+  box-shadow: 0 0 50px 2px #00000077;
+  border-radius: 5px;
+}
+input {
+  display: block;
+  width: 100%;
+  height: 71px;
+  margin: 30px 0;
+  font-size: 20px;
+  padding: 20px;
+}
+.pay-head {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px 0 40px;
+}
+.payment-complete {
+  margin: 50px 0 10px;
+  border: none;
+}
+
+.hidden {
+  display: none;
+}
+
+/* To make the background unclickable when dialogue box appears */
+.backdrop {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 999;
+  height: 100%;
+  width: 100%;
+}
+
+/* success prompt */
+.success-prompt {
+  background-color: #ecfdf5;
+  color: #065f46;
+  font-size: 32px;
+  margin-top: 40px;
+  padding: 40px 60px;
+}
